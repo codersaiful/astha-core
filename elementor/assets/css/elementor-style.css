@@ -1,0 +1,23 @@
+.elementor-edit-area {
+    width: 100%;
+}
+.elementor-panel .elementor-element-wrapper .icon i.astha:after {
+    content: "";
+    font-size: 11px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background: url(../icons/astha.svg) center center;
+    padding: 2px 5px;
+    color: white;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    /*opacity: 0.4;*/
+}
+.elementor-panel .elementor-element-wrapper .elementor-element:hover .icon i.astha:after {
+/*    background: #c5c5c5;
+    color: #93003c;*/
+    background-image: url(../icons/astha-color.svg);
+opacity: 1;
+}

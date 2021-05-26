@@ -1,0 +1,626 @@
+/**
+* Custom Post
+******/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+    # Common CSS
+
+    # Team Details Page
+     - Member info
+     - Skills Section
+
+    # Department Details Page
+  
+     # Case Details Page
+     
+    # Elements
+
+        
+
+/* Common CSS
+--------------------------------------------- */
+.astha_case  .entry-header,
+.astha_department .entry-header,
+.astha_case .entry-content,
+.astha_department .entry-content{
+    margin: 0;
+}
+
+/* Team Details section
+--------------------------------------------- */
+/* Member info */
+.doctor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doctor-header .post-thumbnail,
+.doctor-header .doctor-summary {
+    width: 100%;
+}
+.doctor-header .doctor-summary {
+    padding: 20px;
+}
+
+.doctor-summary .doctor-details p {
+    margin: 15px 0 30px;
+}
+
+.button.get-appointment {
+    padding: 14px 24px;
+    display: inline-block;
+}
+
+.doctor-follow-links ul.link-list li.label {
+    font-size: 18px;
+    line-height: 36px;
+    color: #021429;
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.doctor-follow-links {
+    margin: 30px 0 0;
+}
+
+.doctor-contact-details {
+    margin: 35px 0 0;
+}
+
+.doctor-contact-details ul.contact-info li a,
+.doctor-contact-details ul.contact-info li{
+    color: #5C6B79;
+    line-height: 36px;
+}
+
+.doctor-contact-details ul.contact-info li i {
+    color: #0FC392;
+    margin-right: 12px;
+}
+/* Skills Section */
+.section-content-title.v1{
+    text-align: left;
+}
+
+.section-content-title.v2 {
+    text-align: center;
+}
+.section-content-title.v2 .sub-heading {
+    padding: 0 70px;
+}
+.sub-heading {
+    display: inline-block;
+    font-size: 18px;
+    color: #0FC392;
+    line-height: 1;
+    z-index: 2;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0 10px 0 0;
+
+}
+.sub-heading:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    background: #0FC392;
+    width: 50px;
+    height: 2px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.sub-heading:after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    background: #0FC392;
+    width: 100px;
+    height: 2px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.section-content-title.v2 .sub-heading:after {
+    width: 50px;
+}
+
+.section-content-title.v2 .sub-heading:before {
+    left: 0;
+}
+
+.section-content-title.v2 .sub-heading:after {
+    right: 0;
+}
+
+.section-content-title.v1 .sub-heading:before {
+    display: none;
+}
+
+.section-content-title.v1 .sub-heading:after {
+    right: -110px;
+}
+
+.section-content-title.v2 .heading,
+.section-content-title .entry-title {
+    font-size: 36px;
+    color: #021429;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: capitalize;
+    margin: 0;
+}
+body.single.single-astha_doctor div#page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+.astha_doctor.type-astha_doctor .astha-home-container.section-padding {
+    padding-bottom: 130px;
+}
+
+.astha_doctor.type-astha_doctor .doctor-skill-wrapper.section-padding {
+    padding-top: 130px;
+}
+
+.doctor-skills-wrapper li.skill-item p {
+    color: #5C6B79;
+    margin: 0 0 8px;
+}
+
+.single-astha_service .entry-content {
+    margin: 15px 0 0;
+}
+
+.doctor-skills-wrapper {
+    margin: 50px 0 0;
+}
+
+.doctor-skills-wrapper .entry-content {
+    margin: 0;
+}
+
+.doctor-skills-section ul.doctor-skills-list:before,
+.doctor-skills-section ul.doctor-skills-list:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.doctor-skills-section li.skill-item {
+    margin-bottom: 30px;
+    width: 100%;
+    float: left;
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.doctor-skills-section li.skill-item:nth-child(2n+1) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.doctor-skills-section li.skill-item p {
+    margin: 0 0 7px;
+    font-size: 18px;
+}
+
+.progress {
+    background-color: #ddd;
+    height: 7px;
+    border-radius: 10px;
+    position: relative;
+    width: 93%;
+}
+
+.progress .progress-bar {
+    height: 7px;
+    border-radius: 10px 0 0 10px;
+}
+
+.progress .progress-level {
+    position: absolute;
+    right: -45px;
+    top: -8px;
+}
+
+.doctor-summary .entry-header {
+    margin: 0;
+}
+
+.doctor-summary ul.contact-info,
+.doctor-skills-section ul.doctor-skills-list {
+    list-style: none;
+}
+
+.doctor-skill-wrapper {
+    background-color: #f4f9fc;
+}
+
+/* Department Details Section
+--------------------------------------------- */
+.astha_department  .post-thumbnail {
+    margin: 0 0 20px;
+}
+
+.astha_department  .post-thumbnail img {
+    width: 100%;
+}
+
+.single-astha_department .entry-header {
+    margin: 20px 0 0;
+}
+
+.single-astha_department .list-style-1 li {
+  position: relative;
+  padding-left: 30px;
+  color: #5C6B79;
+  margin-bottom: 12px;
+}
+
+.single-astha_department .list-style-1 li:before {
+  position: absolute;
+  top:-1px;
+  left: 0;
+  content: "\f058";
+  font-family: "Line Awesome Free";
+  font-size: 20px;
+  color: #0FC392;
+}
+/* FAQ */
+
+.department-faq-item {
+    border: 2px solid #e2ebf1;
+    padding: 2px 25px;
+    margin:0 0 20px;
+    transition:0.4s;
+    -webkit-transition:0.4s;
+}
+
+.department-faq-item.open{
+    border-color:#0FC392;
+}
+
+.faq-title {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #021429;
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px 10px 0;
+    position: relative;
+}
+
+.faq-title i {
+    float: right;
+    line-height: 1.5;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.faq-details{
+    display:none;
+    margin-bottom: 20px;
+    color: #5C6B79;
+}
+
+
+/* Case Details Page
+--------------------------------------------- */
+.single-astha_case .astha_case {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+.single-astha_case .content-wrapper,
+.single-astha_case .astha-case-info {
+    width: 100%;
+}
+.single-astha_case .content-wrapper {
+    display:inline-block;
+    float: left;
+}
+
+.single-astha_case .astha_case .post-thumbnail {
+    margin: 0 0 25px;
+    width: 100%;
+}
+
+.single-astha_case .astha_case .entry-header{
+    margin: 0;
+}
+
+.single-astha_case .astha_case .entry-header h1 {
+    font-size: 46px;
+    line-height: 56px;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    color: #021429;
+}
+
+.single-astha_case  .astha-case-info {
+    background: #0fc392;
+    padding: 40px 35px;
+    display:inline-block;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.single-astha_case .astha-case-info .astha-case {
+    margin: 0 0 25px;
+    padding: 0 0 25px;
+    border-bottom: 1px solid #4ECFAF;
+}
+
+.single-astha_case .astha-case-info .astha-case:last-child{
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.single-astha_case .astha-case-info p {
+    margin: 0;
+    color: #fff;
+}
+
+.single-astha_case .astha-case p.label {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.single-astha_case .astha-case p.info {
+  font-family: "Roboto",sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.single-astha_case  .navigation.post-navigation {
+    padding: 1.6em 0;
+    border-top: 1px solid #e2ebf1;
+    border-bottom: 1px solid #e2ebf1;
+}
+.astha-case-details ul {
+    list-style: none;
+}
+
+.astha-case-details ul li {
+    display: flex;
+    column-gap: 10px;
+}
+
+.astha-case-details ul li:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #0fc392;
+}
+.content-wrapper-full {
+    width: 100%;
+}
+
+@media (min-width: 37.5em){
+    .single-astha_case .content-wrapper {
+        width: 50%;
+    }
+    .single-astha_case  .astha-case-info {
+        width: 45%;
+    }
+}
+
+@media (min-width: 62em){
+    .single-astha_case .content-wrapper {
+        width: 67%;
+    }
+    .single-astha_case  .astha-case-info {
+        width:30%;
+    }
+    .single-astha_case .astha-case p.label {
+        font-size: 36px;
+        line-height: 34px;
+        margin: 0 0 12px;
+    }
+}
+
+
+body.single.single-astha_doctor footer.site-footer{margin-top: 0;}
+
+body.single.single-astha_doctor .site-main .posts-navigation, 
+body.single.single-astha_doctor .site-main .post-navigation {
+    display: none;
+     margin: 0; 
+}
+
+@media (max-width: 767px){
+    .doctor-header .doctor-summary {
+        padding: 20px 0;
+    }
+    .astha_doctor.type-astha_doctor .doctor-skill-wrapper.section-padding {
+        padding-top: 60px;
+    }
+    
+    .astha_doctor.type-astha_doctor .doctor-skill-wrapper.section-padding article .entry-content {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1223px){
+    .astha_doctor.type-astha_doctor .doctor-skill-wrapper.section-padding {
+        padding-top: 90px;
+    }
+}
+
+/* Elements
+--------------------------------------------- */
+
+.astha-button {
+    display: inline-block;
+    line-height: 1;
+    background-color: #818a91;
+    font-size: 15px;
+    padding: 12px 24px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.astha-button:focus,
+.astha-button:hover,
+.astha-button:visited {
+    color: #fff;
+}
+/*  .elementor-button-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .elementor-button-icon {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+    .elementor-button-icon svg {
+      width: 1em; }
+  .elementor-button-text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+    display: inline-block; }*/
+  .astha-button.astha-size-xs {
+    font-size: 13px;
+    padding: 10px 20px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
+  .astha-button.astha-size-md {
+    font-size: 16px;
+    padding: 15px 30px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+  .astha-button.astha-size-lg {
+    font-size: 18px;
+    padding: 20px 40px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+  .astha-button.astha-size-xl {
+    font-size: 20px;
+    padding: 25px 50px;
+    -webkit-border-radius: 6px;
+            border-radius: 6px; }
+  .astha-button .elementor-align-icon-right {
+    margin-left: 5px;
+    -webkit-box-ordinal-group: 16;
+        -ms-flex-order: 15;
+            order: 15; }
+  .astha-button .elementor-align-icon-left {
+    margin-right: 5px;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+  .astha-button span {
+    text-decoration: inherit; }
+  
+/**************************
+ *      Departments       *
+ **************************/
+.department-faq {
+    margin-top: 60px;
+}
+.department-faq h3 {
+    color: #021429;
+    text-align: center;
+}
+.department-faq ul.department-faq-list {
+    list-style: none;
+    margin: 40px 0;
+}
+li.department-faq-item.open .fa-plus:before {
+    content: "\f068";
+}
+
+/**************************
+ *      Feedback Form     *
+ **************************/
+.feedback-widget.default {
+    background: #f4f9fc;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #e2ebf1;
+}
+
+.feedback-widget.default h2.custom-widget-title {
+    color: #021429;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.feedback-widget.default input[type="email"], .feedback-widget.default textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    background: #fff;
+    display: block;
+}
+
+.astha-feedback-form .feedback-widget.default br {
+    display: none;
+}
+.astha-feedback-form .wpcf7 form .wpcf7-response-output,
+.astha-feedback-form .feedback-widget p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.feedback-widget.default input[type="submit"] {
+    width: 100%;
+    padding: 13px;
+}
+.doctor-follow-links ul.link-list li.label {
+    display: block;
+}
+@media (min-width: 37.5em){
+    .doctor-header .post-thumbnail,
+    .doctor-header .doctor-summary {
+        width: 47.5%;
+    }
+    .doctor-header .doctor-summary {
+        padding: 20px;
+    }
+    .doctor-follow-links ul.link-list li.label {
+        display: inline-block;
+    }
+    .doctor-skills-section li.skill-item {
+        width: 50%;
+        padding-left: 40px;
+        padding-right: 0;
+    }
+
+    .doctor-skills-section li.skill-item:nth-child(2n+1) {
+        width: 50%;
+        padding-right: 40px;
+    }
+}

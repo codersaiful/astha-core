@@ -1,0 +1,117 @@
+/*   Offer  Section CSS
+-------------------------------------------*/
+.astha_offer_card {
+    
+}
+
+.astha_offer_card .elementor-widget-container {
+    background: transparent;
+    padding: 50px;
+}
+
+.astha_offer_card .mc-offer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.astha_offer_card.card-orientation--landscape {
+    
+}
+
+.astha_offer_card.card-orientation--portrait {
+    
+}
+.astha_offer_card .mc-offer-texts {
+    z-index: 2;
+}
+.astha_offer_card .mc-offer-texts p {
+    margin: 0;
+    line-height: 1em;
+}
+.astha_offer_card .mc-offer-texts p.offer-subheading {
+    color: #f00;
+    font-size: 20px;
+}
+.astha_offer_card .mc-offer-texts p.offer-heading {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Roboto;
+    color: #021429;
+    line-height: 48px;
+    margin: 0 0 20px;
+}
+.astha_offer_card .mc-offer-texts .offer-btn {
+    padding: 11px 22px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.astha_offer_card.elementor-align-right .mc-offer-inner {
+    flex-direction: row-reverse;
+}
+.astha_offer_card.elementor-align-center .mc-offer-inner {
+    flex-direction: column-reverse;
+}
+.astha_offer_card .mc-offer-img {
+    display: flex;
+    z-index: 1;
+}
+
+.astha_offer_card.image-location--middle .mc-offer-img {
+    align-items: center;
+}
+.astha_offer_card.image-location--top .mc-offer-img {
+    align-items: flex-start;
+}
+.astha_offer_card.image-location--bottom .mc-offer-img,
+.card-orientation--portrait .mc-offer-inner .mc-offer-img {
+    align-items: flex-end;
+}
+.card-orientation--portrait .mc-offer-inner {
+    flex-direction: column;
+}
+.card-orientation--landscape .mc-offer-inner {
+    flex-direction: row;
+}
+/*
+image-location--bottom image-location--tablet-middle image-location--mobile-middle
+*/
+@media (max-width: 1024px){
+    .card-orientation--tablet-portrait .mc-offer-inner  {
+        flex-direction: column;
+    }
+    .card-orientation--tablet-landscape .mc-offer-inner  {
+        flex-direction: row;
+    }
+    .astha_offer_card.image-location--tablet-top .mc-offer-img {
+        align-items: flex-start;
+    }
+    .astha_offer_card.image-location--tablet-middle .mc-offer-img {
+        align-items: center;
+    }
+    .astha_offer_card.image-location--tablet-bottom .mc-offer-img {
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .card-orientation--mobile-portrait .mc-offer-inner  {
+        flex-direction: column;
+    }
+    .card-orientation--mobile-landscape .mc-offer-inner  {
+        flex-direction: row;
+    }
+    .astha_offer_card.image-location--mobile-top .mc-offer-img {
+        align-items: flex-start;
+    }
+    .astha_offer_card.image-location--mobile-middle .mc-offer-img {
+        align-items: center;
+    }
+    .astha_offer_card.image-location--mobile-bottom .mc-offer-img {
+        align-items: flex-end;
+    }
+    .astha_offer_card .mc-offer-img {
+        justify-content: flex-end;
+    }
+}
