@@ -7,7 +7,7 @@
  * @since 1.0.2.0 of theme
  */
 function astha_core_menu_control(){
-    add_submenu_page('astha_welcome', esc_html__( 'Setting Backup & Update', 'astha' ), esc_html__( 'Setting Backup & Update', 'astha' ), ASTHA_CORE_CAPABILITY, 'astha-settings-backup', 'astha_core_settings_backup' );
+    add_submenu_page('astha_welcome', esc_html__( 'Setting Backup & Update', 'astha' ), esc_html__( 'Setting Backup & Update', 'astha' ), ASTHA_CORE_CAPABILITY, 'astha-settings-backup', 'astha_core_settings_backup',7 );
 }
 add_action( 'admin_menu', 'astha_core_menu_control', 99 );
 
