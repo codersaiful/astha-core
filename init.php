@@ -23,7 +23,7 @@ if ( !defined( 'ASTHA_CORE_VERSION' ) ) {
     define( 'ASTHA_CORE_VERSION', '1.0.0.20');
 }
 if( !defined( 'ASTHA_CORE_CAPABILITY' ) ){
-    $astha_core_capability = apply_filters( 'astha_core_menu_capability', 'manage_astha' );
+    $astha_core_capability = apply_filters( 'astha_core_menu_capability', 'astha_theme_options' );
     define( 'ASTHA_CORE_CAPABILITY', $astha_core_capability );
 }
 
