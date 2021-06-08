@@ -7,7 +7,7 @@
  * Author: Saiful Islam
  * Author URI: https://profiles.wordpress.org/codersaiful/
  * 
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least:    4.0.0
  * Tested up to:         5.5.2
  * Text Domain: astha
@@ -20,7 +20,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 if ( !defined( 'ASTHA_CORE_VERSION' ) ) {
-    define( 'ASTHA_CORE_VERSION', '1.0.0.20');
+    define( 'ASTHA_CORE_VERSION', '1.0.1.0');
 }
 if( !defined( 'ASTHA_CORE_CAPABILITY' ) ){
     $astha_core_capability = apply_filters( 'astha_core_menu_capability', 'astha_theme_options' );
