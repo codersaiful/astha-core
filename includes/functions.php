@@ -1,6 +1,26 @@
 <?php
 
 /**
+ * Adding Submentu for Customizer 
+ * Restore/Backup saving features
+ * 
+ * @since 1.0.2.0 of theme
+ */
+function astha_core_menu_control(){
+    add_submenu_page('astha_welcome', esc_html__( 'Setting Backup & Update', 'astha' ), esc_html__( 'Setting Backup & Update', 'astha' ), ASTHA_CORE_CAPABILITY, 'astha-settings-backup', 'astha_core_settings_backup' );
+}
+add_action( 'admin_menu', 'astha_core_menu_control', 99 );
+
+/**
+ * Page's file included here for [Setting Backup & Update] Submenu
+ * 
+ * @since 1.0.2.0 of Theme Version
+ */
+function astha_core_settings_backup(){
+    include __DIR__ . '/pages/settings_backup.php';
+}
+
+/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
