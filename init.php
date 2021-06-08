@@ -278,7 +278,7 @@ final class Astha_Core {
 			/* translators: 1: Plugin name 2: Elementor */
 			esc_html__( '%1$s is a Toolkit of %2$s Theme. So %1$s requires %2$s Theme to be installed and activated.', 'astha' ),
 			'<strong>' . esc_html__( 'Astha Core', 'astha' ) . '</strong>',
-			'<a href="' . esc_url( 'https://wordpress.org/themes/astha/' ) . '"><strong>' . esc_html__( 'Astha', 'astha' ) . '</strong></a>'
+			'<a href="' . esc_url( 'https://wordpress.org/themes/astha/' ) . '" target="_blank"><strong>' . esc_html__( 'Astha', 'astha' ) . '</strong></a>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
