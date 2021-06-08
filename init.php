@@ -228,6 +228,11 @@ final class Astha_Core {
                 include_once ASTHA_CORE_BASE_DIR . 'includes/widgets.php';
                 include_once ASTHA_CORE_BASE_DIR . 'includes/template_manager.php';
                 
+                $asthatheme = wp_get_theme();
+                $astha_parent = $asthatheme->parent();
+                if( ( $asthatheme->get( 'Name' ) !== 'Astha' ) || ( $astha_parent && $astha_parent->get( 'Name' ) !== 'Astha' ) ){
+                    add_action( 'admin_notices', [ $this, 'admin_notice_missing_astha_theme' ] );
+                }
 
 	}
 
@@ -254,7 +259,32 @@ final class Astha_Core {
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
 
 	}
+        
 
+	/**
+	 * Admin notice
+	 *
+	 * Warning when the site doesn't have Astha Theme installed or activated.
+	 *
+	 * @since 1.0.3 of Astha Theme
+	 *
+	 * @access public
+	 */
+	public function admin_notice_missing_astha_theme() {
+
+		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
+
+		$message = sprintf(
+			/* translators: 1: Plugin name 2: Elementor */
+			esc_html__( '%1$s is a Toolkit of %2$s Theme. So %1$s requires %2$s Theme to be installed and activated.', 'astha' ),
+			'<strong>' . esc_html__( 'Astha Core', 'astha' ) . '</strong>',
+			'<a href="' . esc_url( 'https://wordpress.org/themes/astha/' ) . '"><strong>' . esc_html__( 'Astha', 'astha' ) . '</strong></a>'
+		);
+
+		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
+
+	}
+        
 	/**
 	 * Admin notice
 	 *
