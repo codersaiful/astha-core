@@ -205,18 +205,26 @@ final class Astha_Core {
                      * 
                      * @since 1.0.0
                      */
-                    include_once ASTHA_CORE_ELEMENTOR_BASE_DIR . '/load.php';
-                    
-                    $widget_folder = ASTHA_CORE_ELEMENTOR_BASE_DIR . '/widgets/';
-                    $widgets = scandir( $widget_folder, 1 );
-                    $widgetsArray = array();
-                    foreach( $widgets as $wid_file_name ){
-                        if( is_file( $widget_folder . $wid_file_name ) ){
-                            $onl_name = substr( $wid_file_name, 0, -4 );
-                            $widgetsArray[$onl_name] = $onl_name;
-                        }
-                    }
-                    new Astha_Elementor( $widgetsArray );
+                    /**
+                     * All Widget Element has transferred to UltraAddons,
+                     * So we have removed from here
+                     * We have removed from astha-core
+                     * 
+                     * @since 1.0.2
+                     * Theme Since: 1.0.2
+                     */
+//                    include_once ASTHA_CORE_ELEMENTOR_BASE_DIR . '/load.php';
+//                    
+//                    $widget_folder = ASTHA_CORE_ELEMENTOR_BASE_DIR . '/widgets/';
+//                    $widgets = scandir( $widget_folder, 1 );
+//                    $widgetsArray = array();
+//                    foreach( $widgets as $wid_file_name ){
+//                        if( is_file( $widget_folder . $wid_file_name ) ){
+//                            $onl_name = substr( $wid_file_name, 0, -4 );
+//                            $widgetsArray[$onl_name] = $onl_name;
+//                        }
+//                    }
+//                    new Astha_Elementor( $widgetsArray );
 		}
                 
                 include_once ASTHA_CORE_ELEMENTOR_BASE_DIR . 'assets/css/load-css.php';
