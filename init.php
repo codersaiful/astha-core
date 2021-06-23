@@ -230,15 +230,18 @@ final class Astha_Core {
                 include_once ASTHA_CORE_ELEMENTOR_BASE_DIR . 'assets/css/load-css.php';
                 
                 
-                include_once ASTHA_CORE_BASE_DIR . 'includes/functions.php';
-                include_once ASTHA_CORE_BASE_DIR . 'includes/post.php';
-                include_once ASTHA_CORE_BASE_DIR . 'includes/enqueue.php';
-                include_once ASTHA_CORE_BASE_DIR . 'includes/widgets.php';
-                include_once ASTHA_CORE_BASE_DIR . 'includes/template_manager.php';
-                
                 $asthatheme = wp_get_theme();
                 $astha_parent = $asthatheme->parent();
-                if( ( $asthatheme->get( 'Name' ) !== 'Astha' ) || ( $astha_parent && $astha_parent->get( 'Name' ) !== 'Astha' ) ){
+                //if( ( $asthatheme->get( 'Name' ) == 'Astha' ) || ( $asthatheme->get( 'Name' ) == 'Astha Child' ) ){
+                if( ( $asthatheme->get( 'Name' ) == 'Astha' ) || ( $astha_parent && $astha_parent->get( 'Name' ) == 'Astha' ) ){
+
+                    include_once ASTHA_CORE_BASE_DIR . 'includes/functions.php';
+                    include_once ASTHA_CORE_BASE_DIR . 'includes/post.php';
+                    include_once ASTHA_CORE_BASE_DIR . 'includes/enqueue.php';
+                    include_once ASTHA_CORE_BASE_DIR . 'includes/widgets.php';
+                    include_once ASTHA_CORE_BASE_DIR . 'includes/template_manager.php';
+                    
+                }else{
                     add_action( 'admin_notices', [ $this, 'admin_notice_missing_astha_theme' ] );
                 }
 
